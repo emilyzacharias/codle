@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/codle/static/css/main.762756ea.css",
+    "main.css": "/codle/static/css/main.d615bad9.css",
     "main.js": "/codle/static/js/main.687a4ddc.js",
     "static/js/453.95647ee5.chunk.js": "/codle/static/js/453.95647ee5.chunk.js",
     "static/media/wordlibrary.txt": "/codle/static/media/wordlibrary.84ca63cdfa41b85923aa.txt",
     "index.html": "/codle/index.html",
-    "main.762756ea.css.map": "/codle/static/css/main.762756ea.css.map",
+    "main.d615bad9.css.map": "/codle/static/css/main.d615bad9.css.map",
     "main.687a4ddc.js.map": "/codle/static/js/main.687a4ddc.js.map",
     "453.95647ee5.chunk.js.map": "/codle/static/js/453.95647ee5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.762756ea.css",
+    "static/css/main.d615bad9.css",
     "static/js/main.687a4ddc.js"
   ]
 }
