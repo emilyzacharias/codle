@@ -1,10 +1,28 @@
 .App {
   text-align: center;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121213;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App-nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 10px 10px 20px;
+  background-color: #121213;
+  border-bottom: solid thin gray;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 20px;
+  font: "lato" sans-serif;
+  height: 60px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +31,18 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
+}
+
+.App-body {
+  text-align: center;
+  background-color: #121213;
+  min-height: 100vh;
+  height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +52,217 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.agreendot {
+  height: 25px;
+  width: 25px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.graydot {
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.byellowdot {
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.emptydot {
+  height: 23px;
+  width: 23px;
+  background-color: transparent;
+  border: solid darkgray;
+  border-width: 1px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 3px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.keyboard {
+  display: flex; /* Use flexbox */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.keyboard-row {
+  display: flex;
+}
+
+.letter-key {
+  margin: 5px;
+  min-width: 35px;
+  height: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 1000;
+  background-color: rgb(107, 107, 107);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+}
+
+button {
+  font-family: "Lato", sans-serif;
+}
+
+.guesses {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.guess {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 230px;
+  padding: 6px;
+}
+
+#submit-button {
+  visibility: hidden;
+}
+
+input {
+  width: 40px;
+  height: 40px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: solid 2px rgb(82, 82, 82);
+  border-radius: 2px;
+  margin: 3px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "lato", sans-serif;
+}
+
+form {
+  margin-left: 46px;
+}
+
+.start-button {
+  color: white;
+  background-color: transparent;
+  border: solid 2px gray;
+  font-family: "lato", sans-serif;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 1000;
+  border-radius: 5px;
+  margin-bottom: 0;
+  margin: 10px;
+}
+
+.notes-button {
+  color: white;
+  background-color: transparent;
+  border: solid 2px gray;
+  font-family: "lato", sans-serif;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 1000;
+  border-radius: 5px;
+  margin-bottom: 0;
+  margin: 10px;
+}
+
+.stats-button {
+  color: white;
+  background-color: transparent;
+  border: solid 2px gray;
+  font-family: "lato", sans-serif;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  height: 40px;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+  padding-bottom: 20px;
+  z-index: 2;
+  
+}
+
+.close-modal-button {
+  margin-left: 190px;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#modal-guesses {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#modal-guess {
+  text-align: center;
+}
+
+.empty-dot-row {
+  margin-left: 90px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .letter-key {
+    margin: 3px;
+    min-width: 25px; /* Adjusted width for mobile */
+    height: 40px; /* Adjusted height for mobile */
+    font-size: 16px; /* Adjusted font size for mobile */
+  }
+}
+
+.tip {
+  color: gray;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  font-family: "Lato", sans-serif;
 }
